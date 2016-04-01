@@ -5,8 +5,29 @@ Polymer({
     this.set("status",Meteor.status().status);
   },
   properties:{
-    status:{
-      type:Object
-    }
+    name:{
+      type:String,
+      value:"Arun Kumar"
+    },
+    nickname:{
+      type:String,
+      value:"tkay"
+    },
+    show:{type:String,
+      value:"show"},
+      nndHidden:{
+        type:Boolean,
+        value:true
+      },
+      status:{
+        type:String
+      }
+  },
+  showNickName:function(){
+    this.nndHidden = !this.nndHidden;
+    this.show = this.nndHidden ? "show" : "hide";
   }
+
 })
+
+

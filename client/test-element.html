@@ -1,6 +1,23 @@
 <dom-module id="test-element">
+  <style>
+paper-card{
+  height:300px;
+  width:300px;
+}
+  </style>
   <template>
-    <paper-button>hai</paper-button>
     status : {{status}}
+    <div class="layout flex vertical center-justified center">
+      <paper-card heading="Synthesis Is Awesome.">
+        <div class="card-content">
+        name : {{name}}
+        <div id="nnDiv" hidden="{{nndHidden}}">
+          nickname:{{nickname}}
+        </div>
+        <div class="card-actions">
+          <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
+        </div>
+      </paper-card>
+    </div>
   </template>
 </dom-module>
