@@ -23,3 +23,4 @@ mwc:synthesis
 mwc:mixin
 differential:vulcanize
 mwc:router
+kadira:flow-router
