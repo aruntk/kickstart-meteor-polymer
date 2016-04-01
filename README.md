@@ -1,5 +1,7 @@
 # Synthesis is meteor + polymer
 
+![synthesis](https://cloud.githubusercontent.com/assets/6007432/14216602/681d296e-f867-11e5-986a-346de25943b2.gif)
+
 ## Usage
 
 Define your elements in the client folder.
