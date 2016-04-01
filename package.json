@@ -1,5 +1,5 @@
 {
-  "name": "synthesis-demo",
+  "name": "kickstart-meteor-polymer",
   "private": true,
   "scripts": {
     "start": "meteor run"

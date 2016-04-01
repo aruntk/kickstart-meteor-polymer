@@ -1,9 +1,5 @@
 Polymer({
   is:"test-element",
-  behaviors:[mwcMixin], //reactive data source mwc:mixin
-  getMeteorData:function(){
-    this.set("status",Meteor.status().status);
-  },
   properties:{
     name:{
       type:String,
@@ -13,15 +9,14 @@ Polymer({
       type:String,
       value:"tkay"
     },
-    show:{type:String,
-      value:"show"},
-      nndHidden:{
-        type:Boolean,
-        value:true
-      },
-      status:{
-        type:String
-      }
+    show:{
+      type:String,
+      value:"show"
+    },
+    nndHidden:{
+      type:Boolean,
+      value:true
+    }
   },
   showNickName:function(){
     this.nndHidden = !this.nndHidden;

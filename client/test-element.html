@@ -6,18 +6,12 @@ paper-card{
 }
   </style>
   <template>
-    status : {{status}}
-    <div class="layout flex vertical center-justified center">
-      <paper-card heading="Synthesis Is Awesome.">
-        <div class="card-content">
-        name : {{name}}
-        <div id="nnDiv" hidden="{{nndHidden}}">
-          nickname:{{nickname}}
-        </div>
-        <div class="card-actions">
-          <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
-        </div>
-      </paper-card>
+    <div id="nnDiv" hidden="{{nndHidden}}">
+      name : {{name}}
+      ||  nickname:{{nickname}}
+    </div>
+    <div class="card-actions">
+      <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
     </div>
   </template>
 </dom-module>
