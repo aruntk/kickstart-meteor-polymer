@@ -15,8 +15,8 @@ Polymer({
     }
 
   },
-  edit:function(){
-    this.set("mwcRoute.params.view", "edit"); 
+  second:function(){
+    this.set("mwcRoute.params.view", "second"); 
   },
   home:function(){
 

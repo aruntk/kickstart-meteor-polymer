@@ -1,17 +1,13 @@
 <dom-module id="test-element">
-  <style>
-paper-card{
-  height:300px;
-  width:300px;
-}
-  </style>
   <template>
-    <div id="nnDiv" hidden="{{nndHidden}}">
-      name : {{name}}
-      ||  nickname:{{nickname}}
+    <div class="horizontal layout">
+      <div>
+        name : {{name}}
+      </div>
+      <div id="nnDiv" hidden="{{nndHidden}}">
+        nickname:{{nickname}}
+      </div>
     </div>
-    <div class="card-actions">
-      <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
-    </div>
+    <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
   </template>
 </dom-module>
