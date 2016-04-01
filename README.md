@@ -12,11 +12,15 @@ client/test-element.html
 ```html
 <dom-module id="test-element">
   <template>
-    <paper-button on-click="showNickName">show nickname</paper-button>
-    name : {{name}}
-<div id="nnDiv" hidden="{{nndHidden}}">
-    nickname:{{nickname}}
-</div>
+    <div class="horizontal layout">
+      <div>
+        name : {{name}}
+      </div>
+      <div id="nnDiv" hidden="{{nndHidden}}">
+        nickname:{{nickname}}
+      </div>
+    </div>
+    <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
   </template>
 </dom-module>
 ```
@@ -31,38 +35,42 @@ Polymer({
       value:"Arun Kumar"
     },
     nickname:{
-    type:String,
-    value:"tkay"
+      type:String,
+      value:"tkay"
+    },
+    show:{
+      type:String,
+      value:"show"
     },
     nndHidden:{
-    type:Boolean,
-    value:true
+      type:Boolean,
+      value:true
     }
   },
   showNickName:function(){
-  this.nndHidden = false;
+    this.nndHidden = !this.nndHidden;
+    this.show = this.nndHidden ? "show" : "hide";
   }
-})
 
+})
 ```
 
-client/index.html (you can use any filename)
+client/main.html (you can use any filename)
 
 ```html
 
 <head>
   <title>Synthesis</title>
-
-    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="bower_components/polymer/polymer.html"/>
-  <link rel="import" href="bower_components/paper-button/paper-button.html"/>
 </head>
 
 <body class="fullbleed">
-  <h1>Synthesis is Meteor + Polymer!</h1>
-   <test-element></test-element>
-</body>
 
+  <mwc-layout id="demo-landing">
+    <div region="header"></div>
+    <div region="main"></div>
+  </mwc-layout>
+
+</body>
 
 ```
 
