@@ -14,15 +14,7 @@ client/test-element.html
 ```html
 <dom-module id="test-element">
   <template>
-    <div class="horizontal layout">
-      <div>
         name : {{name}}
-      </div>
-      <div id="nnDiv" hidden="{{nndHidden}}">
-        nickname:{{nickname}}
-      </div>
-    </div>
-    <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
   </template>
 </dom-module>
 ```
@@ -35,30 +27,14 @@ Polymer({
     name:{
       type:String,
       value:"Arun Kumar"
-    },
-    nickname:{
-      type:String,
-      value:"tkay"
-    },
-    show:{
-      type:String,
-      value:"show"
-    },
-    nndHidden:{
-      type:Boolean,
-      value:true
-    }
-  },
-  showNickName:function(){
-    this.nndHidden = !this.nndHidden;
-    this.show = this.nndHidden ? "show" : "hide";
   }
-
 })
 ```
 
-client/main.html (you can use any filename)
+Define an index file anywhere in any file. 
+You can add separate files for head and body, define multiple head/body tags.
 
+client/your-index.html
 ```html
 
 <head>
@@ -68,11 +44,28 @@ client/main.html (you can use any filename)
 <body class="fullbleed">
 
   <mwc-layout id="demo-landing">
-    <div region="header"></div>
     <div region="main"></div>
   </mwc-layout>
 
 </body>
+
+```
+Routing . client/your-router.js
+
+```js
+
+FlowRouter.wait();
+
+document.addEventListener("WebComponentsReady", function() {
+  FlowRouter.initialize({});
+});
+
+FlowRouter.route("/", {
+  name:'demo',
+  action:function(p,q){
+    mwcLayout.render("demo-layout",{"main":"test-element"});
+  }
+});
 
 ```
 
