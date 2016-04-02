@@ -112,6 +112,17 @@ config.vulcanize
 
 ```
 
+### Docs
+
+Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
+
+Reactively route polymer projects with flowrouter - https://github.com/meteorwebcomponents/router/blob/master/README.md
+
+How to render polymer elements with mwc:layout - https://github.com/meteorwebcomponents/layout/blob/master/README.md
+
+### Forum 
+
+https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20536
 
 ### MWC packages included.
 
