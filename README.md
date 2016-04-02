@@ -8,11 +8,11 @@ Define your elements in the client folder.
 
 you can add js in separate file or you can add it inside the element html file using script tag.
 
-client/test-element.html
+client/your-element.html
 
 
 ```html
-<dom-module id="test-element">
+<dom-module id="your-element">
   <template>
         name : {{name}}
   </template>
@@ -22,7 +22,7 @@ client/test-element.js
 
 ```js
 Polymer({
-  is:"test-element",
+  is:"your-element",
   properties:{
     name:{
       type:String,
@@ -43,7 +43,7 @@ client/your-index.html
 
 <body class="fullbleed">
 
-  <mwc-layout id="demo-landing">
+  <mwc-layout id="demo-layout">
     <div region="main"></div>
   </mwc-layout>
 
@@ -63,7 +63,7 @@ document.addEventListener("WebComponentsReady", function() {
 FlowRouter.route("/", {
   name:'demo',
   action:function(p,q){
-    mwcLayout.render("demo-layout",{"main":"test-element"});
+    mwcLayout.render("demo-layout",{"main":"your-element"});
   }
 });
 
