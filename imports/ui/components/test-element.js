@@ -1,3 +1,4 @@
+import './test-element.html';
 Polymer({
   is:"test-element",
   properties:{
