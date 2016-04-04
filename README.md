@@ -1,26 +1,20 @@
 # Synthesis is meteor + polymer
 
+![synthesis1](https://cloud.githubusercontent.com/assets/6007432/14216652/9da7131a-f867-11e5-9f84-6dd75d60dd45.gif)
+
 ## Usage
 
 Define your elements in the client folder.
 
 you can add js in separate file or you can add it inside the element html file using script tag.
 
-client/test-element.html
+client/your-element.html
 
 
 ```html
-<dom-module id="test-element">
+<dom-module id="your-element">
   <template>
-    <div class="horizontal layout">
-      <div>
         name : {{name}}
-      </div>
-      <div id="nnDiv" hidden="{{nndHidden}}">
-        nickname:{{nickname}}
-      </div>
-    </div>
-    <paper-button raised on-click="showNickName">{{show}} nickname</paper-button>
   </template>
 </dom-module>
 ```
@@ -28,35 +22,19 @@ client/test-element.js
 
 ```js
 Polymer({
-  is:"test-element",
+  is:"your-element",
   properties:{
     name:{
       type:String,
       value:"Arun Kumar"
-    },
-    nickname:{
-      type:String,
-      value:"tkay"
-    },
-    show:{
-      type:String,
-      value:"show"
-    },
-    nndHidden:{
-      type:Boolean,
-      value:true
-    }
-  },
-  showNickName:function(){
-    this.nndHidden = !this.nndHidden;
-    this.show = this.nndHidden ? "show" : "hide";
   }
-
 })
 ```
 
-client/main.html (you can use any filename)
+Define an index file anywhere in any file. 
+You can add separate files for head and body, define multiple head/body tags.
 
+client/your-index.html
 ```html
 
 <head>
@@ -65,12 +43,29 @@ client/main.html (you can use any filename)
 
 <body class="fullbleed">
 
-  <mwc-layout id="demo-landing">
-    <div region="header"></div>
+  <mwc-layout id="demo-layout">
     <div region="main"></div>
   </mwc-layout>
 
 </body>
+
+```
+Routing . client/your-router.js
+
+```js
+
+FlowRouter.wait();
+
+document.addEventListener("WebComponentsReady", function() {
+  FlowRouter.initialize({});
+});
+
+FlowRouter.route("/", {
+  name:'demo',
+  action:function(p,q){
+    mwcLayout.render("demo-layout",{"main":"your-element"});
+  }
+});
 
 ```
 
@@ -110,6 +105,17 @@ config.vulcanize
 
 ```
 
+### Docs
+
+Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
+
+Reactively route polymer projects with flowrouter - https://github.com/meteorwebcomponents/router/blob/master/README.md
+
+How to render polymer elements with mwc:layout - https://github.com/meteorwebcomponents/layout/blob/master/README.md
+
+### Forum 
+
+https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20536
 
 ### MWC packages included.
 
