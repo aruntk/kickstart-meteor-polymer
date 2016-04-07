@@ -1,5 +1,6 @@
 import './test-layout.html';
 
+Synthesizer.ready(function(){
 Polymer({
   is:"test-layout",
   behaviors:[mwcMixin,mwcRouter],
@@ -26,4 +27,4 @@ Polymer({
   }
 });
 
-
+});

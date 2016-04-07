@@ -1,4 +1,5 @@
 import './test-element.html';
+Synthesizer.ready(function(){
 Polymer({
   is:"test-element",
   properties:{
@@ -25,5 +26,5 @@ Polymer({
   }
 
 })
-
+});
 

@@ -1,6 +1,7 @@
 FlowRouter.wait();
 
 document.addEventListener("WebComponentsReady", function() {
+
   FlowRouter.initialize({
   });
 });
@@ -17,8 +18,8 @@ FlowRouter.route("/:view?", {
 });
 
 
-import '../../ui';
 
+import '../../ui';
 
 
 

@@ -18,10 +18,28 @@ client/your-element.html
   </template>
 </dom-module>
 ```
-client/test-element.js
+
+You can define elements by any of the following methods.
+
+Using Synthesizer.ready
+```js
+//client/test-element.js
+Synthesizer.ready(function(){
+  Polymer({
+    is:"your-element",
+    properties:{
+      name:{
+        type:String,
+        value:"Arun Kumar"
+    }
+  })
+})
+```
+Using Synthesis instead of Polymer.
 
 ```js
-Polymer({
+//client/test-element.js
+Synthesis({
   is:"your-element",
   properties:{
     name:{
@@ -30,6 +48,7 @@ Polymer({
   }
 })
 ```
+
 
 Define an index file anywhere in any file. 
 You can add separate files for head and body, define multiple head/body tags.
@@ -134,3 +153,4 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 [differential:vulcanize](https://atmospherejs.com/differential/vulcanize) to vulcanize polymer elements instead of adding them in the head directly.
 
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
+
