@@ -49,7 +49,7 @@ mongo@1.1.6
 mongo-id@1.0.3
 mwc:mixin@1.0.10
 mwc:router@1.0.8
-mwc:synthesis@1.0.9
+mwc:synthesis@1.0.10
 npm-mongo@1.4.42
 observe-sequence@1.0.10
 ordered-dict@1.0.6

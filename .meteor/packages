@@ -21,7 +21,6 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 mwc:synthesis
 mwc:mixin
-#differential:vulcanize
 mwc:router
 kadira:flow-router
 differential:vulcanize
