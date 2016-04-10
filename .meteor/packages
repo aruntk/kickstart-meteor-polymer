@@ -24,3 +24,4 @@ mwc:mixin
 mwc:router
 kadira:flow-router
 differential:vulcanize
+mwc:layout

@@ -119,7 +119,6 @@ config.vulcanize
     "/bower_components/iron-elements/iron-elements.html",
     "/bower_components/paper-elements/paper-elements.html",
     "/bower_components/neon-animation/neon-animation.html",
-    "/bower_components/mwc-layout/mwc-layout.html",
     "/bower_components/polymer/polymer.html"
   ]
 }
@@ -134,9 +133,11 @@ Reactively route polymer projects with flowrouter - https://github.com/meteorweb
 
 How to render polymer elements with mwc:layout - https://github.com/meteorwebcomponents/layout/blob/master/README.md
 
+
 ### Forum 
 
 https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20536
+
 
 ### MWC packages included.
 
@@ -150,9 +151,11 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 [MWC Layout](https://github.com/meteorwebcomponents/layout) - polymer layout renderer . Added using bower.
 
 
+
 ### Other Packages Used
 
 [differential:vulcanize](https://atmospherejs.com/differential/vulcanize) to vulcanize polymer elements instead of adding them in the head directly.
 
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
+
 
