@@ -1,6 +1,6 @@
 import './test-layout.html';
 
-Synthesis({
+Polymer({
   is:"test-layout",
   behaviors:[mwcMixin,mwcRouter],
   getMeteorData:function(){

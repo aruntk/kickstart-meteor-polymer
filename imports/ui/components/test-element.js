@@ -1,5 +1,5 @@
 import './test-element.html';
-Synthesis({
+Polymer({
   is:"test-element",
   properties:{
     name:{
