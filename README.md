@@ -26,7 +26,6 @@ You can define elements by any of the following methods.
 Using Synthesizer.ready
 ```js
 //client/test-element.js
-Synthesizer.ready(function(){
   Polymer({
     is:"your-element",
     properties:{
@@ -35,13 +34,12 @@ Synthesizer.ready(function(){
         value:"Arun Kumar"
     }
   })
-})
 ```
 Using Synthesis instead of Polymer.
 
 ```js
 //client/test-element.js
-Synthesis({
+Polymer({
   is:"your-element",
   properties:{
     name:{
