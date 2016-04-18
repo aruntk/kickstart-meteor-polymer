@@ -6,7 +6,7 @@
 
 ###Directory structure
 
-![synthesis](https://cloud.githubusercontent.com/assets/6007432/14248837/46a3a3f6-fa94-11e5-9c62-a0b2d0540dd3.png)
+![synth](https://cloud.githubusercontent.com/assets/6007432/14591625/5bea78d6-0532-11e6-82aa-7f86caf6798d.png)
 
 you can add js in separate file or you can add it inside the element html file using script tag.
 
