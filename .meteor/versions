@@ -18,7 +18,6 @@ ddp-common@1.2.4
 ddp-server@1.2.5
 deps@1.0.11
 diff-sequence@1.0.4
-differential:vulcanize@3.0.0
 ecmascript@0.4.2
 ecmascript-runtime@0.2.9
 ejson@1.0.10
@@ -47,11 +46,9 @@ modules@0.5.2
 modules-runtime@0.6.2
 mongo@1.1.6
 mongo-id@1.0.3
-mwc:layout@1.1.11
 mwc:mixin@1.0.15
 mwc:router@1.0.10
-mwc:synthesis@1.0.16
-mwc:synthesis-minifier@1.0.0
+mwc:synthesis@1.0.18
 npm-mongo@1.4.42
 observe-sequence@1.0.10
 ordered-dict@1.0.6
@@ -65,6 +62,7 @@ routepolicy@1.0.9
 spacebars@1.0.10
 spacebars-compiler@1.0.10
 standard-minifier-css@1.0.5
+standard-minifier-js@1.0.5
 templating-tools@1.0.3
 tracker@1.0.12
 ui@1.0.10
