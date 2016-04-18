@@ -115,7 +115,7 @@ Polymer({
 
 bower_components are kept inside imports/ui/bower_components folder.
 
-bower.json (public/bower.json)
+bower.json (imports/ui/bower.json)
 
 ```json
 {
