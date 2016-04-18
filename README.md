@@ -13,115 +13,120 @@ you can add js in separate file or you can add it inside the element html file u
 client/your-element.html
 
 
-```html
-<dom-module id="your-element">
-  <template>
-        name : {{name}}
-  </template>
-</dom-module>
-```
-
-You can define elements by any of the following methods.
-
-Using Synthesizer.ready
-```js
-//client/test-element.js
-  Polymer({
-    is:"your-element",
-    properties:{
-      name:{
-        type:String,
-        value:"Arun Kumar"
-    }
-  })
-```
-Using Synthesis instead of Polymer.
 
 ```js
-//client/test-element.js
-Polymer({
-  is:"your-element",
-  properties:{
-    name:{
-      type:String,
-      value:"Arun Kumar"
-  }
-})
+//client/main.js
+
+import '../imports/startup/client/router.js';
+
 ```
 
-
-Define an index file anywhere in any file. 
-You can add separate files for head and body, define multiple head/body tags.
-
-client/your-index.html
 ```html
-
+<!-- client/main.html -->
 <head>
   <title>Synthesis</title>
-</head>
-
+  <style>
+body{
+padding:0px;
+margin:0px;
+}
+  </style>
+  </head>
 <body class="fullbleed">
-
-  <mwc-layout id="demo-layout">
+  <mwc-layout id="demo-landing">
+    <div region="header"></div>
     <div region="main"></div>
   </mwc-layout>
-
 </body>
 
 ```
 Routing . client/your-router.js
 
 ```js
-
 FlowRouter.wait();
 
 document.addEventListener("WebComponentsReady", function() {
-  FlowRouter.initialize({});
+
+  FlowRouter.initialize({
+  });
 });
 
-FlowRouter.route("/", {
-  name:'demo',
-  action:function(p,q){
-    mwcLayout.render("demo-layout",{"main":"your-element"});
+FlowRouter.route("/:view?", {
+  name:'landing',
+  triggersEnter:[function(c,r){
+    if(!c.params.view)
+      r("/home");
+  }],
+  action:function(params,queryParams){
+    mwcLayout.render("demo-landing",{"main":"test-layout"});
   }
+});
+
+// ***** Loading order is important. ******
+
+import '../../ui/bower_components/webcomponentsjs/webcomponents-lite.min.js'
+import "../../ui/bower_components/polymer/polymer.html";
+import '../../ui/layouts/test-layout.js';
+import "../../ui/bower_components/mwc-layout/mwc-layout.html";
+
+```
+
+```js
+//imports/ui/layouts/test-layout.js
+import './test-layout.html';
+
+Polymer({
+  is:"test-layout",
+  behaviors:[mwcMixin,mwcRouter],
+  getMeteorData:function(){
+    this.set("status",Meteor.status().status);
+  },
+  
+...
+
 });
 
 ```
 
-bower_components are kept inside public folder.
+```html
+
+<link rel="import" href="../components/test-element.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<dom-module id="test-layout">
+  <style>
+  /*style goes here */
+    ... 
+    
+  </style>
+  <template>
+    <paper-header-panel class="fit layout">
+    
+     ...
+     
+    </paper-header-panel>
+  </template>
+</dom-module>
+
+```
+
+
+
+bower_components are kept inside imports/ui/bower_components folder.
 
 bower.json (public/bower.json)
 
 ```json
 {
     "dependencies": {
-        "iron-elements": "PolymerElements/iron-elements#^1.0.0",
-        "neon-elements": "PolymerElements/neon-elements#^1.0.0",
+        "mwc-layout": "*",
         "paper-elements": "PolymerElements/paper-elements#^1.0.5",
+        "iron-pages": "PolymerElements/iron-pages#^1.0.0",
         "polymer": "Polymer/polymer#^1.0.0"
     },
-    "name": "mwc-synthesis",
+    "name": "synthesis-demo",
     "version": "0.0.1"
 }
 
-```
-
-config.vulcanize
-
-```json
-
-{
-  "polyfill": "/bower_components/webcomponentsjs/webcomponents.min.js",
-  "imports": [
-    "/bower_components/font-roboto/roboto.html",
-    "/bower_components/iron-elements/iron-elements.html",
-    "/bower_components/paper-elements/paper-elements.html",
-    "/bower_components/neon-animation/neon-animation.html",
-    "/bower_components/polymer/polymer.html"
-  ]
-}
-
-```
 
 ### Docs
 
