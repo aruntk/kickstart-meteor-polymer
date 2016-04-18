@@ -129,7 +129,7 @@ bower.json (public/bower.json)
     "version": "0.0.1"
 }
 
-
+```
 ### Docs
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
