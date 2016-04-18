@@ -40,9 +40,11 @@ margin:0px;
 </body>
 
 ```
-Routing . client/your-router.js
+####Routing . 
 
 ```js
+//client/your-router.js
+
 FlowRouter.wait();
 
 document.addEventListener("WebComponentsReady", function() {
