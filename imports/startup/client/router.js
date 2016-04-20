@@ -20,9 +20,8 @@ FlowRouter.route("/:view?", {
 
 
 import '../../ui/bower_components/webcomponentsjs/webcomponents-lite.min.js'
+import "../../ui/bower_components/polymer/polymer.html";
 import '../../ui';
-import "../../ui/bower_components/mwc-layout/mwc-layout.html";
-
 
 
 

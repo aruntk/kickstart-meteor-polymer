@@ -46,9 +46,10 @@ modules@0.5.2
 modules-runtime@0.6.2
 mongo@1.1.6
 mongo-id@1.0.3
+mwc:layout@1.1.12
 mwc:mixin@1.0.15
 mwc:router@1.0.10
-mwc:synthesis@1.0.18
+mwc:synthesis@1.0.19
 npm-mongo@1.4.42
 observe-sequence@1.0.10
 ordered-dict@1.0.6
