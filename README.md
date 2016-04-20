@@ -69,7 +69,6 @@ FlowRouter.route("/:view?", {
 import '../../ui/bower_components/webcomponentsjs/webcomponents-lite.min.js'
 import "../../ui/bower_components/polymer/polymer.html";
 import '../../ui/layouts/test-layout.js';
-import "../../ui/bower_components/mwc-layout/mwc-layout.html";
 
 ```
 
@@ -120,7 +119,6 @@ bower.json (imports/ui/bower.json)
 ```json
 {
     "dependencies": {
-        "mwc-layout": "*",
         "paper-elements": "PolymerElements/paper-elements#^1.0.5",
         "iron-pages": "PolymerElements/iron-pages#^1.0.0",
         "polymer": "Polymer/polymer#^1.0.0"
@@ -139,9 +137,11 @@ Reactively route polymer projects with flowrouter - https://github.com/meteorweb
 How to render polymer elements with mwc:layout - https://github.com/meteorwebcomponents/layout/blob/master/README.md
 
 
+
 ### Forum 
 
 https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20536
+
 
 
 ### MWC packages included.
@@ -156,11 +156,9 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 [MWC Layout](https://github.com/meteorwebcomponents/layout) - polymer layout renderer . Added using bower.
 
 
-
 ### Other Packages Used
 
-[differential:vulcanize](https://atmospherejs.com/differential/vulcanize) to vulcanize polymer elements instead of adding them in the head directly.
-
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
+
 
 
