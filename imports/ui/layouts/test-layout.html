@@ -15,10 +15,15 @@
     <paper-header-panel class="fit layout">
       <paper-toolbar>
 
-        <div class="flex"><h1>Synthesis is Meteor + Polymer!</h1></div>
-        <div class="">
-          status : {{status}}
-        </div>
+        <div class="flex"><h1>Synthesis
+            <template is="dom-if" if="[[notCordova]]">
+              is Meteor + Polymer!
+            </template>
+          </h1></div>
+
+          <div class="">
+            status : {{status}}
+          </div>
       </paper-toolbar>
       <iron-pages class="flex main" id="mainView" selected="{{mwcRoute.params.view}}" attr-for-selected="name">
         <paper-card heading="ROUTE:1" id="region1" name="home">
