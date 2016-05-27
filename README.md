@@ -1,3 +1,4 @@
+> Checkout this branch. using polymer npm package instead of bower. https://github.com/aruntk/kickstart-meteor-polymer/tree/npm
 # Synthesis is meteor + polymer
 
 ![synthesis1](https://cloud.githubusercontent.com/assets/6007432/14216652/9da7131a-f867-11e5-9f84-6dd75d60dd45.gif)
