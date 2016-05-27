@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   '@polymer/web-animations-js' ]
+2 info using npm@3.9.2
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @polymer/web-animations-js
+8 silly fetchNamedPackageData @polymer/web-animations-js
+9 silly mapToRegistry name @polymer/web-animations-js
+10 silly mapToRegistry scope (from package name) @polymer
+11 verbose mapToRegistry no registry URL found in name for scope @polymer
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '@polymer/web-animations-js',
+14 silly mapToRegistry   scope: '@polymer',
+14 silly mapToRegistry   name: '@polymer/web-animations-js',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/@polymer%2fweb-animations-js
+16 verbose request uri https://registry.npmjs.org/@polymer%2fweb-animations-js
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 1:41:02 PM
+19 verbose request id 52c32aea4ee83c92
+20 http request GET https://registry.npmjs.org/@polymer%2fweb-animations-js
+21 http 404 https://registry.npmjs.org/@polymer%2fweb-animations-js
+22 verbose headers { 'content-type': 'application/json',
+22 verbose headers   'cache-control': 'max-age=0',
+22 verbose headers   'content-length': '21',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   date: 'Fri, 27 May 2016 08:11:03 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   age: '0',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-iad2129-IAD',
+22 verbose headers   'x-cache': 'MISS',
+22 verbose headers   'x-cache-hits': '0',
+22 verbose headers   'x-timer': 'S1464336663.590246,VS0,VE257' }
+23 silly get cb [ 404,
+23 silly get   { 'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=0',
+23 silly get     'content-length': '21',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Fri, 27 May 2016 08:11:03 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-iad2129-IAD',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1464336663.590246,VS0,VE257' } ]
+24 silly fetchPackageMetaData Error: Not found : @polymer/web-animations-js
+24 silly fetchPackageMetaData     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+24 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+24 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:200:22)
+24 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+24 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+24 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+24 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+24 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:988:12)
+24 silly fetchPackageMetaData  error for @polymer/web-animations-js { Error: Not found : @polymer/web-animations-js
+24 silly fetchPackageMetaData     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+24 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+24 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:200:22)
+24 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+24 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+24 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+24 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+24 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:988:12)
+24 silly fetchPackageMetaData   pkgid: '@polymer/web-animations-js',
+24 silly fetchPackageMetaData   statusCode: 404,
+24 silly fetchPackageMetaData   code: 'E404' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: Not found : @polymer/web-animations-js
+30 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+30 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+30 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:200:22)
+30 verbose stack     at emitTwo (events.js:106:13)
+30 verbose stack     at Request.emit (events.js:191:7)
+30 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+30 verbose stack     at emitOne (events.js:101:20)
+30 verbose stack     at Request.emit (events.js:188:7)
+30 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:988:12)
+31 verbose statusCode 404
+32 verbose pkgid @polymer/web-animations-js
+33 verbose cwd /home/tkay/projects/mwc/kickstart-meteor-polymer
+34 error Linux 4.1.24-1-MANJARO
+35 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save" "@polymer/web-animations-js"
+36 error node v6.2.0
+37 error npm  v3.9.2
+38 error code E404
+39 error 404 Not found : @polymer/web-animations-js
+40 error 404
+41 error 404 '@polymer/web-animations-js' is not in the npm registry.
+42 error 404 You should bug the author to publish it (or use the name yourself!)
+43 error 404 Note that you can also install from a
+44 error 404 tarball, folder, http url, or git url.
+45 verbose exit [ 1, true ]

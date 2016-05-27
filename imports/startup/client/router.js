@@ -19,9 +19,8 @@ FlowRouter.route("/:view?", {
 
 
 
-import '../../ui/bower_components/webcomponentsjs/webcomponents-lite.min.js'
-import "../../ui/bower_components/polymer/polymer.html";
-//import "../../ui/bower_components/mwc-layout/mwc-layout.html"; //if you are using bower for mwc-layout
+import 'webcomponents.js/webcomponents-lite.min.js'
+import "@polymer/polymer/polymer.html";
 import '../../ui';
 
 

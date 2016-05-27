@@ -1,4 +1,9 @@
 import './test-layout.html';
+import '../components/test-element.js';
+import "@polymer/paper-elements/paper-elements.html";
+import "@polymer/paper-styles/paper-styles.html";
+import "@polymer/iron-pages/iron-pages.html";
+import "@polymer/iron-flex-layout/classes/iron-flex-layout.html";
 
 Polymer({
   is:"test-layout",

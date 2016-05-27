@@ -2,6 +2,20 @@
 
 ![synthesis1](https://cloud.githubusercontent.com/assets/6007432/14216652/9da7131a-f867-11e5-9f84-6dd75d60dd45.gif)
 
+## Setup
+
+
+#### clone the repo
+
+`git clone git@github.com:aruntk/kickstart-meteor-polymer.git`
+
+#### Install npm dependencies
+
+`npm install`
+
+>Do not use meteor npm install. Instead use npm install @polymer/components-name
+
+
 ## Usage
 
 ###Directory structure
@@ -66,15 +80,16 @@ FlowRouter.route("/:view?", {
 
 // ***** Loading order is important. ******
 
-import '../../ui/bower_components/webcomponentsjs/webcomponents-lite.min.js'
-import "../../ui/bower_components/polymer/polymer.html";
-import '../../ui/layouts/test-layout.js';
+import 'webcomponents.js/webcomponents-lite.min.js'
+import "@polymer/polymer/polymer.html";
+import '../../ui';
 
 ```
 
 ```js
 //imports/ui/layouts/test-layout.js
 import './test-layout.html';
+import "@polymer/iron-pages/iron-pages.html";
 
 Polymer({
   is:"test-layout",
@@ -92,7 +107,6 @@ Polymer({
 ```html
 
 <link rel="import" href="../components/test-element.html">
-<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <dom-module id="test-layout">
   <style>
   /*style goes here */
@@ -110,24 +124,9 @@ Polymer({
 
 ```
 
+> IMPORTANT. Inside @polymer/neon-animation/web-animations.html
+> change `<script src="../web-animations-js/web-animations-next-lite.min.js"></script>` to `<script src="../../web-animations-js/web-animations-next-lite.min.js"></script>`
 
-
-bower_components are kept inside imports/ui/bower_components folder.
-
-bower.json (imports/ui/bower.json)
-
-```json
-{
-    "dependencies": {
-        "paper-elements": "PolymerElements/paper-elements#^1.0.5",
-        "iron-pages": "PolymerElements/iron-pages#^1.0.0",
-        "polymer": "Polymer/polymer#^1.0.0"
-    },
-    "name": "synthesis-demo",
-    "version": "0.0.1"
-}
-
-```
 ### Docs
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
@@ -159,6 +158,7 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 ### Other Packages Used
 
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
+
 
 
 

@@ -5,6 +5,8 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "@polymer/iron-pages": "0.0.3",
+    "@polymer/paper-elements": "0.0.3",
     "meteor-node-stubs": "~0.2.0"
   }
 }
