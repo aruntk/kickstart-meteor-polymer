@@ -6,6 +6,22 @@
 
 ## Usage
 
+### Polymer Settings
+
+Create /lib/settings.js
+
+Why lib directory ? Settings code should run before anything else. 
+
+```js
+/* /lib/settings.js */
+if(Meteor.isClient){
+  window.Polymer = {
+    //dom: 'shadow',
+    lazyRegister: true
+  };
+}
+```
+
 ###Directory structure
 
 ![synth](https://cloud.githubusercontent.com/assets/6007432/14591625/5bea78d6-0532-11e6-82aa-7f86caf6798d.png)
@@ -161,6 +177,7 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 ### Other Packages Used
 
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
+
 
 
 
