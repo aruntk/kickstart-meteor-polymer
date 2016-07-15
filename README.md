@@ -36,7 +36,7 @@ window.Polymer = {
 
 ###Directory structure
 
-![synth](https://cloud.githubusercontent.com/assets/6007432/14591625/5bea78d6-0532-11e6-82aa-7f86caf6798d.png)
+![synth](https://cloud.githubusercontent.com/assets/6007432/16890239/5ce6756e-4b0a-11e6-8198-59fa2b8d6b08.png)
 
 you can add js in separate file or you can add it inside the element html file using script tag.
 
@@ -108,7 +108,7 @@ import './test-layout.html';
 Polymer({
   is:"test-layout",
   behaviors:[mwcMixin,mwcRouter],
-  getMeteorData:function(){
+  tracker:function(){
     this.set("status",Meteor.status().status);
   },
   
