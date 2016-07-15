@@ -15576,46 +15576,46 @@ It will also ensure that focus remains in the dialog.
 
 <dom-module id="paper-dialog-scrollable" assetpath="bower_components/paper-dialog-scrollable/">
 
-  <style>
-
-    :host {
-      display: block;
-      @apply(--layout-relative);
-    }
-
-    :host(.is-scrolled:not(:first-child))::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: var(--divider-color);
-    }
-
-    :host(.can-scroll:not(.scrolled-to-bottom):not(:last-child))::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: var(--divider-color);
-    }
-
-    .scrollable {
-      padding: 0 24px;
-
-      @apply(--layout-scroll);
-      @apply(--paper-dialog-scrollable);
-    }
-
-    .fit {
-      @apply(--layout-fit);
-    }
-  </style>
-
   <template>
+    <style>
+
+      :host {
+        display: block;
+        @apply(--layout-relative);
+      }
+
+      :host(.is-scrolled:not(:first-child))::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--divider-color);
+      }
+
+      :host(.can-scroll:not(.scrolled-to-bottom):not(:last-child))::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--divider-color);
+      }
+
+      .scrollable {
+        padding: 0 24px;
+
+        @apply(--layout-scroll);
+        @apply(--paper-dialog-scrollable);
+      }
+
+      .fit {
+        @apply(--layout-fit);
+      }
+    </style>
+
     <div id="scrollable" class="scrollable">
       <content></content>
     </div>
