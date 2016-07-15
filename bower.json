@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "paper-elements": "PolymerElements/paper-elements#^1.0.5",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
+    "iron-pages": "PolymerElements/iron-pages#^1.0.0",
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "name": "synthesis-demo",
+  "version": "0.0.1"
+}

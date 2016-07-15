@@ -3,7 +3,7 @@ import './test-layout.html';
 Polymer({
   is:"test-layout",
   behaviors:[mwcMixin,mwcRouter],
-  getMeteorData:function(){
+  tracker:function(){
     this.set("status",Meteor.status().status);
     if(!Meteor.isCordova){
       this.notCordova = true;

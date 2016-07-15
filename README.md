@@ -6,6 +6,20 @@
 
 ## Usage
 
+### Running
+
+vulcanize the public/imports.html file to build.html before starting meteor
+
+```sh
+vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > imports/ui/build.html && meteor
+
+```
+ or run the run shell file kept in root folder
+
+```sh
+./run.sh
+```
+
 ### Polymer Settings
 
 Create client/lib/settings.js
@@ -43,18 +57,20 @@ import '../imports/startup/client/router.js';
   <title>Synthesis</title>
   <style>
 body{
-padding:0px;
-margin:0px;
+  padding:0px;
+  margin:0px;
 }
   </style>
-  </head>
+
+  <script src='/bower_components/webcomponentsjs/webcomponents-lite.min.js'></script>
+  <link rel="import" href="/build.html">
+</head>
 <body class="fullbleed">
   <mwc-layout id="demo-landing">
     <div region="header"></div>
     <div region="main"></div>
   </mwc-layout>
 </body>
-
 ```
 ####Routing . 
 
@@ -80,10 +96,7 @@ FlowRouter.route("/:view?", {
   }
 });
 
-// ***** Loading order is important. ******
 
-import '../../ui/bower_components/webcomponentsjs/webcomponents-lite.min.js'
-import "../../ui/bower_components/polymer/polymer.html";
 import '../../ui/layouts/test-layout.js';
 
 ```
@@ -108,7 +121,6 @@ Polymer({
 ```html
 
 <link rel="import" href="../components/test-element.html">
-<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <dom-module id="test-layout">
   <style>
   /*style goes here */
@@ -128,9 +140,9 @@ Polymer({
 
 
 
-bower_components are kept inside imports/ui/bower_components folder.
+bower_components are kept inside public/bower_components folder.
 
-bower.json (imports/ui/bower.json)
+bower.json
 
 ```json
 {
@@ -144,6 +156,7 @@ bower.json (imports/ui/bower.json)
 }
 
 ```
+
 ### Docs
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
@@ -154,9 +167,11 @@ How to render polymer elements with mwc:layout - https://github.com/meteorwebcom
 
 
 
+
 ### Forum 
 
 https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20536
+
 
 
 
@@ -172,9 +187,11 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 [MWC Layout](https://github.com/meteorwebcomponents/layout) - polymer layout renderer . Added using bower.
 
 
+
 ### Other Packages Used
 
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
+
 
 
 
