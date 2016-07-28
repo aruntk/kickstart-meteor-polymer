@@ -1,4 +1,5 @@
-> Checkout this branch. using polymer npm package instead of bower. https://github.com/aruntk/kickstart-meteor-polymer/tree/npm
+> Use npm for polymer instead of bower. https://github.com/aruntk/kickstart-meteor-polymer/tree/npm
+> Use app-route element for routing instead of flow router https://github.com/aruntk/kickstart-meteor-polymer-with-app-route
 
 # Synthesis is meteor + polymer
 
