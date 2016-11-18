@@ -1,33 +1,29 @@
 import './test-layout.html';
 
 Polymer({
-  is:"test-layout",
-  behaviors:[mwcMixin,mwcRouter],
-  tracker:function(){
-    this.set("status",Meteor.status().status);
-    if(!Meteor.isCordova){
+  is: 'test-layout',
+  behaviors: [mwcMixin, mwcRouter],
+  tracker() {
+    this.set('status', Meteor.status().status);
+    if (!Meteor.isCordova) {
       this.notCordova = true;
     }
   },
-  properties:{
-    mwcRoute:{
-      type:Object,
-      name:"landing",
-      params:{"view":"home"}
+  properties: {
+    mwcRoute: {
+      type: Object,
+      name: 'landing',
+      params: { view: 'home' },
     },
-    status:{
-      type:String
+    status: {
+      type: String,
     },
-    notCordova:Boolean
-
+    notCordova: Boolean,
   },
-  second:function(){
-    this.set("mwcRoute.params.view", "second"); 
+  second() {
+    this.set('mwcRoute.params.view', 'second');
   },
-  home:function(){
-
-    this.set("mwcRoute.params.view", "home"); 
-  }
+  home() {
+    this.set('mwcRoute.params.view', 'home');
+  },
 });
-
-

@@ -1,3 +1,3 @@
-import "./build.html";
+import './imports.html';
 import './layouts/test-layout.js';
 
