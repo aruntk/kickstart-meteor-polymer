@@ -10,17 +10,15 @@
 
 ### Running
 
-vulcanize the public/imports.html file to build.html before starting meteor
+Install external components.
 
-```sh
-vulcanize --inline-css --inline-scripts --strip-comments public/imports.html > imports/ui/build.html && meteor
+bower
 
-```
- or run the run shell file kept in root folder
+`bower install`
 
-```sh
-./run.sh
-```
+npm
+
+`npm install`
 
 ### Polymer Settings
 
@@ -159,6 +157,7 @@ bower.json
 
 ```
 
+
 ### Docs
 
 Use meteor data reactively inside polymer components - https://github.com/meteorwebcomponents/mixin/blob/master/README.md
@@ -193,8 +192,4 @@ https://forums.meteor.com/t/polymer-meteor-with-meteor-webcomponents-packages/20
 ### Other Packages Used
 
 [Flow Router](https://github.com/kadirahq/flow-router) - Carefully Designed Client Side Router for Meteor
-
-
-
-
 
