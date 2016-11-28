@@ -57,9 +57,6 @@ body{
   margin:0px;
 }
   </style>
-
-  <script src='/bower_components/webcomponentsjs/webcomponents-lite.min.js'></script>
-  <link rel="import" href="/build.html">
 </head>
 <body class="fullbleed">
   <mwc-layout id="demo-landing">
@@ -135,8 +132,7 @@ Polymer({
 ```
 
 
-
-bower_components are kept inside public/bower_components folder.
+bower_components are kept inside imports/ui/bower_components folder.
 
 bower.json
 
