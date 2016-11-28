@@ -17,9 +17,9 @@ if [ "$CONT" = "y" ]; then
   do
     find ./imports/ui/bower_components/* -depth -name $i -exec rm -rf "{}" \;
   done
-  for i in "${folders[@]}"
+  files=( "demo" "test" )
+  for i in "${files[@]}"
   do
-    files=( "demo" "test" )
     find ./imports/ui/bower_components/* -depth -name "${i}.*" -type f|xargs rm -f
   done
   echo "Cleanup Successful.!";
