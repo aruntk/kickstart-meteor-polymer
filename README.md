@@ -32,7 +32,7 @@ window.Polymer = {
 
 ###Directory structure
 
-![synth](https://cloud.githubusercontent.com/assets/6007432/16890239/5ce6756e-4b0a-11e6-8198-59fa2b8d6b08.png)
+![synth](https://cloud.githubusercontent.com/assets/6007432/21349548/882a7e88-c6d8-11e6-9a69-512e7294553f.png)
 
 you can add js in separate file or you can add it inside the element html file using script tag.
 
