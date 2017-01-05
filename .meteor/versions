@@ -49,9 +49,8 @@ mongo-id@1.0.6
 mwc:layout@1.1.21
 mwc:mixin@1.0.35
 mwc:router@1.0.10
-mwc:synthesis@1.2.2
+mwc:synthesis@1.2.4
 mwc:synthesis-compiler@1.2.1
-mwc:synthesis-file@0.1.2
 npm-mongo@2.2.11_2
 observe-sequence@1.0.14
 ordered-dict@1.0.9
