@@ -26,7 +26,9 @@ cd your-app-folder
 ```
 cleanup bower_components script is also there in build.sh
 
-#### Add a component (components are inside imports/ui/bower_components):
+#### Add a component 
+
+components are inside imports/ui/bower_components
 
 1. Install it as `./bower.sh install --save example-component`.
 
@@ -99,7 +101,7 @@ body{
   </mwc-layout>
 </body>
 ```
-####Routing . 
+#### Routing . 
 
 ```js
 //client/your-router.js
