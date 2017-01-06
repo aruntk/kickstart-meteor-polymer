@@ -1,0 +1,16 @@
+{ 
+  "short_name": "Synthesis",
+  "name": "Synthesis",
+  "icons": [
+    {
+      "src": "mwc.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color":"#3f51b5",
+  "background":"#3f51b5",
+  "background_color":"#3f51b5"
+}
