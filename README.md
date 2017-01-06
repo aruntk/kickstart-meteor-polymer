@@ -60,7 +60,7 @@ Service Worker - [public/sw.js](public/sw.js).
 
 Initializing - [client/main.js](client/main.js). 
 
-Web Manifest - [public/web.manifest.js](public/web.manifest.js). [client/main.html](client/main.html#L5).
+Web Manifest - [public/web.manifest.js](public/web.manifest.js), [client/main.html](client/main.html#L5).
 
 More about Service Worker - https://developers.google.com/web/fundamentals/getting-started/primers/service-workers
 
