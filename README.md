@@ -63,7 +63,8 @@ To do this there are two methods
 1. Minimongo caching - Use [ground:db](https://github.com/GroundMeteor/db)
 
 2. Use [iron-local-storage](https://elements.polymer-project.org/elements/iron-localstorage)
-###Directory structure
+
+### Directory structure
 
 ![synth](https://cloud.githubusercontent.com/assets/6007432/21349548/882a7e88-c6d8-11e6-9a69-512e7294553f.png)
 
