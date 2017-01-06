@@ -36,7 +36,19 @@ window.Polymer = {
   lazyRegister: true
 };
 ```
+### Offline First
 
+Service worker caching is enabled in this app. [client/main.js](client/main.js)
+
+This will cache all your assets, js, html, css etc.
+
+What this wont do - It'll not cache db data. 
+
+To do this there are two methods
+
+1. Minimongo caching - Use [ground:db](https://github.com/GroundMeteor/db)
+
+2. Use [iron-local-storage](https://elements.polymer-project.org/elements/iron-localstorage)
 ###Directory structure
 
 ![synth](https://cloud.githubusercontent.com/assets/6007432/21349548/882a7e88-c6d8-11e6-9a69-512e7294553f.png)
