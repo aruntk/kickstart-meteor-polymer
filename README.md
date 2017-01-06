@@ -8,21 +8,35 @@
 
 ## Usage
 
-### Running
+### Installation.
 
-#### Install external components.
+#### Clone the repo 
 ```sh
+git clone git@github.com:aruntk/kickstart-meteor-polymer.git your-app-folder
+```
+[change remote url](https://help.github.com/articles/changing-a-remote-s-url/).
+
+#### Building
+
+Type the following in shell. Script install bower components and npm packages.
+```sh
+#shell
+cd your-app-folder
 ./build.sh
 ```
 cleanup bower_components script is also there in build.sh
 
-#### To a component (components are inside imports/ui/bower_components):
+#### Add a component (components are inside imports/ui/bower_components):
 
 1. Install it as `./bower.sh install --save example-component`.
 
 2. Input component name `example-component` to import `example-component/example-component.html`. If you want to import something else (for eg behavior/script/css) skip this step by pressing enter and then manually add it to the `imports/ui/imports.html` file.
 
 
+### Running
+```sh
+meteor
+```
 ### Polymer Settings
 
 Create client/lib/settings.js
