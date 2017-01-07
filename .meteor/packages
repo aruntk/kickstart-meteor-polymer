@@ -24,3 +24,4 @@ mwc:router
 kadira:flow-router
 mwc:layout
 shell-server@0.2.1
+mwc:synthesis-assets
