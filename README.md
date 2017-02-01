@@ -52,6 +52,14 @@ window.Polymer = {
   lazyRegister: true
 };
 ```
+
+### Polymer Weight
+
+```sh
+npm run weigh
+```
+See which component is making the app slow.
+
 ### Offline First
 
 Service worker caching is enabled in this app. 
