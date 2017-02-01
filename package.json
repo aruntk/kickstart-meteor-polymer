@@ -10,6 +10,6 @@
     "meteor-node-stubs": "~0.2.0"
   },
   "devDependencies": {
-    "polymer-weight": "^1.0.2"
+    "polymer-weight": "^1.0.3"
   }
 }
