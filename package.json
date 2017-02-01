@@ -2,10 +2,14 @@
   "name": "kickstart-meteor-polymer",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "weigh": "weigh --path imports/ui/index.html --depth 2"
   },
   "dependencies": {
     "babel-runtime": "^6.18.0",
     "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "polymer-weight": "^1.0.2"
   }
 }

@@ -1,5 +1,3 @@
-import './test-layout.html';
-
 Polymer({
   is: 'test-layout',
   behaviors: [mwcMixin, mwcRouter],
