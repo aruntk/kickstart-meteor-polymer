@@ -60,6 +60,8 @@ npm run weigh
 ```
 See which component is making the app slow.
 
+More details -> https://github.com/aruntk/polymer-weight
+
 ### Offline First
 
 Service worker caching is enabled in this app. 
